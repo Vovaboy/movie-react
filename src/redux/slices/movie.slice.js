@@ -44,7 +44,8 @@ const movieSlice = createSlice({
 const {reducer: movieReducer} = movieSlice;
 
 export default movieReducer;
-export const movieActions = {
+ const movieActions = {
     getAllMovies,
     getMoviesByGenres
 }
+export {movieActions}

@@ -1,10 +1,10 @@
 import React from 'react';
-import {Header} from "./components/Header/Header";
+import {MoviesList} from "./components/MoviesList/MovieList";
 
 const App = () => {
     return (
         <div>
-            <Header/>
+            <MoviesList/>
         </div>
     );
 };
