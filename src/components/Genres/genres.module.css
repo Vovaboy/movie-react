@@ -1,0 +1,10 @@
+.genres{
+    width: 300px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 360px;
+    background-color: #282c34;
+    color: snow;
+
+}

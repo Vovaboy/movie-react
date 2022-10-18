@@ -5,7 +5,7 @@ import {Movie} from "../Movie/Movie";
 import {movieActions} from "../../redux/slices";
 
 import {useSearchParams} from "react-router-dom";
-
+import css from "./movieList.module.css"
 export const MoviesList = () => {
     const {movies: {results}} = useSelector(state => state.movies)
     let dispatch = useDispatch();
@@ -37,7 +37,7 @@ export const MoviesList = () => {
 
     return (
         <div>
-            <div >{results && results.map((movie) => <Movie key={movie.id} movie={movie}/>)}</div>
+            <div className={css.wrap}>{results && results.map((movie) => <Movie key={movie.id} movie={movie}/>)}</div>
             <div >
                 <button onClick={prevPage}>Prev</button>
                 <button onClick={nextPage}>Next</button>
