@@ -1,12 +1,15 @@
 import React from 'react';
 import css from './movie.module.css'
 import {Link} from "react-router-dom";
-
-
+import ReactStars from "react-stars/dist/react-stars";
 
 
 export const Movie = ({movie}) => {
 
+    console.log(movie)
+    const ratingChanged = (newRating) => {
+        console.log(newRating);
+    }
     return (
         <div className={css.movie}>
             <Link to={movie.id.toString()} state={movie}>
@@ -17,8 +20,16 @@ export const Movie = ({movie}) => {
                         <div className={css.title}>
                             <div>{movie.title}</div>
                             <div>Data:{movie.release_date}</div>
-                            <div>Rating:{movie.vote_average}</div>
+                            <div>{movie.vote_average}</div>
 
+                            <div>
+
+                                <ReactStars
+                                    count={10}
+                                    onChange={ratingChanged}
+                                    size={24}
+                                    activeColor="#DC143C"
+                                    value={movie.vote_average}/></div>
 
 
                         </div>

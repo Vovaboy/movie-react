@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px 10px;
+    gap: 20px 10px;
     margin-top: 20px;
 }
 .wrap{
 
     display: flex;
     flex-wrap: wrap;
+
 }
 .pageBtn {
     display: flex;

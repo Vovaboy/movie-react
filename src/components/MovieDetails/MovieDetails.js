@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLocation} from "react-router-dom";
 
-import css from './movieInfo.module.css';
+import css from './movieDetails.module.css';
 
 
 export const MovieDetails = () => {

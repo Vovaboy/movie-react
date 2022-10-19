@@ -16,6 +16,8 @@ export const Genres = () => {
     return (
         <div className={css.genres}>
             {genres && genres.map(genre=> <Genre key={genre.id} genre={genre}/>)}
+
         </div>
+
     );
 };
