@@ -6,11 +6,14 @@ import {movieActions} from "../../redux/slices";
 
 import {useSearchParams} from "react-router-dom";
 import css from "./movieList.module.css"
+import {SearchBar} from "../SearchBar/SearchBar";
+import {Genres} from "../Genres/Genres";
+
 export const MoviesList = () => {
     const {movies: {results}} = useSelector(state => state.movies)
     let dispatch = useDispatch();
     let [query, setQuery] = useSearchParams({page: '1'});
-    console.log(query);
+
 
     const page = query.get('page');
 
@@ -37,11 +40,15 @@ export const MoviesList = () => {
 
     return (
         <div>
+            <SearchBar/>
             <div className={css.wrap}>{results && results.map((movie) => <Movie key={movie.id} movie={movie}/>)}</div>
             <div >
                 <button onClick={prevPage}>Prev</button>
                 <button onClick={nextPage}>Next</button>
+
+
             </div>
+
         </div>
     );
 };

@@ -17,7 +17,7 @@ export const MovieDetails = () => {
                 <div className={css.container}>
                     <div className={css.info}>Date: {state.release_date}</div>
                     <hr/>
-                    <div className={css.info}>Genre:</div>
+                    <div className={css.info}>Genre: </div>
                     <hr/>
                     <div className={css.info}>Original language: {state.original_language}</div>
                     <hr/>

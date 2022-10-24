@@ -6,9 +6,9 @@ import ReactStars from "react-stars/dist/react-stars";
 
 export const Movie = ({movie}) => {
 
-    console.log(movie)
+
     const ratingChanged = (newRating) => {
-        console.log(newRating);
+
     }
     return (
         <div className={css.movie}>

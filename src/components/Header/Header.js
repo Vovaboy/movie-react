@@ -5,6 +5,7 @@ import css from "./Header.css"
 import {User} from "../User/User";
 
 
+
 export const Header = () => {
     function toggleDarkTheme() {
         return document.body.classList.toggle('dark-theme');
@@ -27,6 +28,7 @@ export const Header = () => {
                     </label>
                 </div>
                 <User/>
+
             </div>
         </div>
     );
